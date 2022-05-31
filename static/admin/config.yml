@@ -12,25 +12,19 @@ collections:
     label: "Posts"
     folder: "content/posts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{slug}}"
     preview_path: "posts/slug"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layout/posts"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "date"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Tags", name: "tags", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Publish Date", name: "date", widget: "date", required: true}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Categories", name: "categories", widget: "string", required: true}
+      - {label: "Author", name: "author", widget: hidden, default: "YohJawa"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Header Image", name: "image", widget: "image", required: false}
+      - {label: "Comments", name: "comments", widget: "boolean", default: false}
+      - {label: "Sharing", name: "share", widget: "boolean", default: true}
+      - {label: "Tags", name: "tags", widget: "string", required: false}
+      - {label: "Type", name: "type", widget: "hidden", type: "post"}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
    
-  - name: "pages"
-    label: "Menu Pages"
-    folder: "content/pages"
-    create: true
-    slug: "{{slug}}"
-    preview_path: "pages/slug"
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layout/pages"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "date"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
