@@ -1,4 +1,4 @@
-# yohjawa
+# YohJawa Personal Blog
 My Personal Blog
 
 I'm just trying to create my personal blog using Hugo and Netlify
