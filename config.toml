@@ -1,0 +1,26 @@
+baseURL = "https://blog.yohjawa.my.id/"
+languageCode = "en-us"
+title = "YohJawa's Blog"
+theme = "Niello"
+
+staticDir = ["static", "themes/Niello/static"]
+
+[params]
+keywords = ""
+description = ""
+copyright = "&#xA9; 2022 by YohJawa. All Rights Reserved."
+google_ad_client = "ca-pub-******"
+ga = "UA-******"
+sharethis = ""
+
+[menu]
+    [[menu.niello]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+    [[menu.niello]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+    
