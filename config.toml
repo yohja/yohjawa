@@ -3,8 +3,6 @@ languageCode = "en-us"
 title = "YohJawa's Blog"
 theme = "Niello"
 
-staticDir = ["static", "themes/Niello/static"]
-
 [params]
 keywords = ""
 description = ""
